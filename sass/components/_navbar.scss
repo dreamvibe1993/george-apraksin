@@ -1,0 +1,14 @@
+.navigation {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-tertiary;
+  height: 6rem;
+  padding: 1rem 1.5rem;
+  &__logo {
+    color: $color-primary-light;
+  }
+  &__tabs {
+  }
+}

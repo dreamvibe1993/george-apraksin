@@ -1,0 +1,33 @@
+.img-card {
+  width: 25rem;
+  height: 30rem;
+  background-image: radial-gradient($color-white, rgb(255, 237, 217));
+  box-shadow: 0 0.5rem 1.5rem rgba($color-black, 0.15);
+  padding: 1rem 1rem 0 1rem;
+  &__picture--1 {
+    background-image: url("../img/me-bw-sq.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+  }
+  &__picture--2 {
+    background-image: url("../img/me-beer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+  }
+  &__picture--3 {
+    background-image: url("../img/me-stairs.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+  }
+  transition: all 0.2s;
+  transform: scale(0.8);
+  &:hover {
+    transform: scale(1);
+  }
+}
