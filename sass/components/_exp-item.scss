@@ -1,0 +1,10 @@
+.section-experience__item {
+  display: inline-block;
+  text-align: center;
+  width: 14rem;
+  margin: 2rem;
+  &__logo {
+    height: 12rem;
+    width: 100%;
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,13 +8,128 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <title>George Apraksine</title>
   </head>
   <body>
-    <h1>Project Starter</h1>
+    <nav class="navigation">
+      <div class="navigation__logo">LOGO</div>
+      <div class="navigation__tabs">
+        <a href="#" class="btn btn--primary"><span>About</span></a>
+        <a href="#" class="btn btn--primary"><span>Skills</span></a>
+        <a href="#" class="btn btn--primary"><span>Portfolio</span></a>
+        <a href="#" class="btn btn--primary"><span>Contacts</span></a>
+      </div>
+    </nav>
+    <header class="header">
+      <img
+        src="./img/main-pic-1.jpg"
+        class="header__picture"
+        alt="Palms and my name"
+      />
+      <div class="header__text"></div>
+    </header>
+    <main>
+      <section class="section-about">
+        <div class="section-about__carousel">
+          <div class="img-card">
+            <div class="img-card__picture--2">&nbsp;</div>
+          </div>
+          <div class="img-card">
+            <div class="img-card__picture--1">&nbsp;</div>
+          </div>
+          <div class="img-card">
+            <div class="img-card__picture--3">&nbsp;</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="section-about__description">
+            <!-- <p>
+              Меня зовут Гоша и мне 28 лет. Я живу в Екатеринбурге. Я обладаю
+              суровым взглядом, но на самом деле я веселый и немного дурачок. Я
+              люблю учиться, общаться, солнечную погоду, музыку, разные забавные
+              факты и конечно же... Спать! Шучу. Веб. Если вы читаете этот
+              абзац, то скорее всего вы смотрели мое резюме. Если вас интересуют
+              мои навыки, смотрите следующий блок. Если вас интересуют кошечки,
+              то я не знаю что тут сказать. Возьмите меня на работу, пожалуйста.
+              Мне нужны деньги. Я могу делать так. Могу так. А могу вот так.
+            </p> -->
+          </div>
+        </div>
+      </section>
+      <div class="heading-primary">
+        <h1>Experience</h1>
+      </div>
+      <section class="section-experience">
+        <div class="section-experience__item">
+          <img
+            src="./img/ts-logo-128.svg"
+            alt="Typescript logo"
+            class="section-experience__item__logo"
+          />
+          <p class="section-experience__item__description">Typescript 4.2</p>
+        </div>
+        <div class="section-experience__item">
+          <img
+            src="./img/angular_logo.svg"
+            alt="Angular 11 logo"
+            class="section-experience__item__logo"
+          />
+          <p class="section-experience__item__description">Angular 11</p>
+        </div>
+        <div class="section-experience__item">
+          <img
+            src="./img/react_logo.svg"
+            alt="React logo"
+            class="section-experience__item__logo"
+          />
+          <p class="section-experience__item__description">React 17.0.2</p>
+        </div>
+        <div class="section-experience__item">
+          <img
+            src="./img/firebase_logo.svg"
+            alt="Firebase logo"
+            class="section-experience__item__logo"
+          />
+          <p class="section-experience__item__description">Firebase</p>
+        </div>
+        <div class="section-experience__item">
+          <img
+            src="./img/rxjs_logo.svg"
+            alt="RxJS logo"
+            class="section-experience__item__logo"
+          />
+          <p class="section-experience__item__description">RxJS</p>
+        </div>
+        <div class="section-experience__item">
+          <img
+            src="./img/redux_logo.svg"
+            alt="Redux logo"
+            class="section-experience__item__logo"
+          />
+          <p class="section-experience__item__description">Redux Toolkit</p>
+        </div>
+        <div class="section-experience__item">
+          <img
+            src="./img/sass_logo.svg"
+            alt="Sass logo"
+            class="section-experience__item__logo"
+          />
+          <p class="section-experience__item__description">Sass</p>
+        </div>
+      </section>
+      <div class="heading-primary">
+        <h1>Portfolio</h1>
+      </div>
+      <div class="heading-primary">
+        <h1>About</h1>
+      </div>
+      <div class="heading-primary">
+        <h1>Contacts</h1>
+      </div>
+    </main>
     <script src="js/script.js"></script>
   </body>
 </html>

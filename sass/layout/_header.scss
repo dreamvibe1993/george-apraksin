@@ -1,0 +1,9 @@
+.header {
+  padding-top: 6rem;
+  &__picture {
+    display: block;
+    width: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}

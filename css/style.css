@@ -9,7 +9,120 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #fff6ff; }
+
+main {
+  padding: 0 2rem; }
 
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7; }
+
+.heading-primary {
+  margin: 0 auto;
+  width: 40%;
+  background-color: #e1be74;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  margin: 3rem auto;
+  text-align: center;
+  transform: skew(-15deg); }
+  .heading-primary > h1 {
+    transform: skew(15deg);
+    color: #fff6ff;
+    font-size: 3.4rem; }
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #251b2a;
+  padding: 1rem 1.5rem;
+  z-index: 99999; }
+  .navigation__logo {
+    color: #e8f1e2; }
+
+.btn {
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: inline-block; }
+  .btn:link, .btn:visited {
+    transform: skewX(-15deg); }
+  .btn--primary {
+    color: #fff;
+    padding: 1rem 1.5rem;
+    background-color: #e1be74;
+    text-transform: uppercase;
+    font-weight: 700; }
+    .btn--primary > * {
+      display: inline-block;
+      transform: skewX(15deg); }
+
+.img-card {
+  width: 25rem;
+  height: 30rem;
+  background-image: radial-gradient(#fff, #ffedd9);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  padding: 1rem 1rem 0 1rem;
+  transition: all 0.2s;
+  transform: scale(0.8);
+  border-radius: 3px; }
+  .img-card__picture--1 {
+    background-image: url("../img/me-bw-sq.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem; }
+  .img-card__picture--2 {
+    background-image: url("../img/me-beer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem; }
+  .img-card__picture--3 {
+    background-image: url("../img/me-stairs.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem; }
+  .img-card:hover {
+    transform: scale(1);
+    box-shadow: 0 0.3rem 4.5rem rgba(0, 0, 0, 0.1); }
+
+.section-experience__item {
+  display: inline-block;
+  text-align: center;
+  width: 14rem;
+  margin: 2rem; }
+  .section-experience__item__logo {
+    height: 12rem;
+    width: 100%; }
+
+.row {
+  display: flex;
+  justify-content: space-around; }
+
+.header {
+  padding-top: 6rem; }
+  .header__picture {
+    display: block;
+    width: 50%;
+    overflow: hidden;
+    margin: 0 auto; }
+
+.section-about {
+  border-radius: 3px;
+  width: 100%;
+  padding: 0 2rem; }
+  .section-about__carousel {
+    display: flex;
+    justify-content: space-around; }
+
+.section-experience {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }

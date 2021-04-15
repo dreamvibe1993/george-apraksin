@@ -4,6 +4,9 @@
   background-image: radial-gradient($color-white, rgb(255, 237, 217));
   box-shadow: 0 0.5rem 1.5rem rgba($color-black, 0.15);
   padding: 1rem 1rem 0 1rem;
+  transition: all 0.2s;
+  transform: scale(0.8);
+  border-radius: 3px;
   &__picture--1 {
     background-image: url("../img/me-bw-sq.jpg");
     background-position: center;
@@ -25,9 +28,9 @@
     background-size: cover;
     height: 20rem;
   }
-  transition: all 0.2s;
-  transform: scale(0.8);
+
   &:hover {
     transform: scale(1);
+    box-shadow: 0 0.3rem 4.5rem rgba($color-black, 0.1);
   }
 }

@@ -4,8 +4,8 @@
   display: flex;
   justify-content: space-between;
   background-color: $color-tertiary;
-  height: 6rem;
   padding: 1rem 1.5rem;
+  z-index: 99999;
   &__logo {
     color: $color-primary-light;
   }
