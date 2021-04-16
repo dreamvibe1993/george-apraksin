@@ -23,3 +23,9 @@ body {
     // background-image: linear-gradient(to bottom, $color-tertiary, $color-white);
   }
 }
+
+.section-about {
+  &__description {
+    padding: 0 2rem;
+  }
+}

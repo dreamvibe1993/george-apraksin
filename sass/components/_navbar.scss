@@ -7,7 +7,11 @@
   padding: 1rem 1.5rem;
   z-index: 99999;
   &__logo {
-    color: $color-primary-light;
+    max-height: 4rem;
+    width: 10rem;
+    object-position: 0 60%;
+    object-fit: cover;
+    overflow: hidden;
   }
   &__tabs {
   }

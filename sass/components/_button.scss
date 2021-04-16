@@ -6,15 +6,19 @@
   &:visited {
     transform: skewX(-15deg);
   }
+  transition: all 0.4s;
   &--primary {
     color: $color-white;
     padding: 1rem 1.5rem;
-    background-color: $color-secondary-1;
+    background-color: rgba($color-secondary-1, 0.9);
     text-transform: uppercase;
     font-weight: 700;
     & > * {
       display: inline-block;
       transform: skewX(15deg);
+    }
+    &:hover {
+      background-color: $color-secondary-1;
     }
   }
 }

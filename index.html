@@ -15,57 +15,98 @@
   </head>
   <body>
     <nav class="navigation">
-      <div class="navigation__logo">LOGO</div>
+      <img
+        src="./img/svg/UJIF-only.svg"
+        alt="My logo"
+        class="navigation__logo"
+      />
       <div class="navigation__tabs">
-        <a href="#" class="btn btn--primary"><span>About</span></a>
-        <a href="#" class="btn btn--primary"><span>Skills</span></a>
-        <a href="#" class="btn btn--primary"><span>Portfolio</span></a>
-        <a href="#" class="btn btn--primary"><span>Contacts</span></a>
+        <a href="#about" class="btn btn--primary"><span>About</span></a>
+        <a href="#experience" class="btn btn--primary"
+          ><span>Experience</span></a
+        >
+        <a href="#portfolio" class="btn btn--primary"><span>Portfolio</span></a>
+        <a href="#contacts" class="btn btn--primary"><span>Contacts</span></a>
       </div>
     </nav>
     <header class="header">
-      <img
-        src="./img/main-pic-1.jpg"
-        class="header__picture"
-        alt="Palms and my name"
-      />
+      <div class="header__scenery">
+        <img
+          src="./img/svg/label-compo/trees.svg"
+          class="header__scenery header__scenery__trees"
+          alt="Palm trees"
+        />
+        <img
+          src="./img/svg/label-compo/sun.svg"
+          class="header__scenery header__scenery__sun"
+          alt="Sun"
+        />
+        <a href="https://soundcloud.com/mister-dreamvibe">
+          <img
+            src="./img/svg/UJIF-only.svg"
+            class="header__scenery header__scenery__ujif"
+            alt="Ujif"
+          />
+        </a>
+      </div>
       <div class="header__text"></div>
     </header>
     <main>
+      <div class="heading-primary" id="about">
+        <h1>About me</h1>
+      </div>
       <section class="section-about">
         <div class="section-about__carousel">
           <div class="img-card">
-            <div class="img-card__picture--2">&nbsp;</div>
+            <div class="img-card__side img-card__side--front">
+              <div class="img-card__picture img-card__picture--2">&nbsp;</div>
+            </div>
+            <div class="img-card__side img-card__side--back">
+              <p>Я покушал шашлычки и наслаждаюсь квасом. 🤭</p>
+            </div>
           </div>
           <div class="img-card">
-            <div class="img-card__picture--1">&nbsp;</div>
+            <div class="img-card__side img-card__side--front">
+              <div class="img-card__picture img-card__picture--1">&nbsp;</div>
+            </div>
+            <div class="img-card__side img-card__side--back">
+              <p>Я в лесу позирую на серьёзных щщах. 😒</p>
+            </div>
           </div>
           <div class="img-card">
-            <div class="img-card__picture--3">&nbsp;</div>
+            <div class="img-card__side img-card__side--front">
+              <div class="img-card__picture img-card__picture--3">&nbsp;</div>
+            </div>
+            <div class="img-card__side img-card__side--back">
+              <p>Я на лестнице. 😋</p>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="section-about__description">
-            <!-- <p>
-              Меня зовут Гоша и мне 28 лет. Я живу в Екатеринбурге. Я обладаю
-              суровым взглядом, но на самом деле я веселый и немного дурачок. Я
-              люблю учиться, общаться, солнечную погоду, музыку, разные забавные
-              факты и конечно же... Спать! Шучу. Веб. Если вы читаете этот
-              абзац, то скорее всего вы смотрели мое резюме. Если вас интересуют
-              мои навыки, смотрите следующий блок. Если вас интересуют кошечки,
-              то я не знаю что тут сказать. Возьмите меня на работу, пожалуйста.
-              Мне нужны деньги. Я могу делать так. Могу так. А могу вот так.
-            </p> -->
-          </div>
+        <div class="section-about__description">
+          <h2>Привет!</h2>
+          <p>Меня зовут Георгий.</p>
+          <br />
+          <p>
+            Я начинающий frontend-dev, в поисках работы или стажировки. У меня
+            нет специального образования. Всё что я знаю, я узнал, читая
+            документации или посещая разные семинары и лекции. Из моего
+            серьезного опыта работы в сфере IT стоит отметить зимнюю стажировку
+            в компании <a href="https://www.interesnee.ru/">Очень Интересно</a>.
+            Моя мечта - стать настоящим профессионалом. Если у вас есть
+            подходящая для меня вакансия или работа, то пожалуйста,
+            <a href="#contacts">свяжитесь со мной</a>.
+          </p>
+          <br />
+          <p>Увидимся! 😉</p>
         </div>
       </section>
-      <div class="heading-primary">
+      <div class="heading-primary" id="experience">
         <h1>Experience</h1>
       </div>
       <section class="section-experience">
         <div class="section-experience__item">
           <img
-            src="./img/ts-logo-128.svg"
+            src="./img/svg/ts-logo-128.svg"
             alt="Typescript logo"
             class="section-experience__item__logo"
           />
@@ -73,7 +114,7 @@
         </div>
         <div class="section-experience__item">
           <img
-            src="./img/angular_logo.svg"
+            src="./img/svg/angular_logo.svg"
             alt="Angular 11 logo"
             class="section-experience__item__logo"
           />
@@ -81,7 +122,7 @@
         </div>
         <div class="section-experience__item">
           <img
-            src="./img/react_logo.svg"
+            src="./img/svg/react_logo.svg"
             alt="React logo"
             class="section-experience__item__logo"
           />
@@ -89,7 +130,7 @@
         </div>
         <div class="section-experience__item">
           <img
-            src="./img/firebase_logo.svg"
+            src="./img/svg/firebase_logo.svg"
             alt="Firebase logo"
             class="section-experience__item__logo"
           />
@@ -97,7 +138,7 @@
         </div>
         <div class="section-experience__item">
           <img
-            src="./img/rxjs_logo.svg"
+            src="./img/svg/rxjs_logo.svg"
             alt="RxJS logo"
             class="section-experience__item__logo"
           />
@@ -105,7 +146,7 @@
         </div>
         <div class="section-experience__item">
           <img
-            src="./img/redux_logo.svg"
+            src="./img/svg/redux_logo.svg"
             alt="Redux logo"
             class="section-experience__item__logo"
           />
@@ -113,22 +154,114 @@
         </div>
         <div class="section-experience__item">
           <img
-            src="./img/sass_logo.svg"
+            src="./img/svg/sass_logo.svg"
             alt="Sass logo"
             class="section-experience__item__logo"
           />
           <p class="section-experience__item__description">Sass</p>
         </div>
       </section>
-      <div class="heading-primary">
+      <div class="heading-primary" id="portfolio">
         <h1>Portfolio</h1>
       </div>
-      <div class="heading-primary">
-        <h1>About</h1>
+      <section class="section-portfolio">
+        <div class="section-portfolio__item">
+          <a href="https://dreamvibe1993.github.io/star-wars-react/">
+            <img
+              src="./img/gif/sw-react.gif"
+              alt="react sw app gif"
+              class="section-portfolio__item__gif"
+            />
+          </a>
+          <p class="section-portfolio__item__description">
+            Star Wars App React
+          </p>
+        </div>
+        <div class="section-portfolio__item">
+          <a href="https://dreamvibe1993.github.io/star-wars-js-camp-angular">
+            <img
+              src="./img/gif/sw-angular.gif"
+              alt="angular sw app gif"
+              class="section-portfolio__item__gif"
+            />
+          </a>
+          <p class="section-portfolio__item__description">
+            Star Wars App Angular
+          </p>
+        </div>
+        <div class="section-portfolio__item">
+          <a
+            href="https://dreamvibe1993.github.io/star-wars-js-camp-vannillajs/index.html"
+          >
+            <img
+              src="./img/gif/sw-vanilla.gif"
+              alt="vanilla sw app gif"
+              class="section-portfolio__item__gif"
+            />
+          </a>
+          <p class="section-portfolio__item__description">
+            Star Wars App Vanilla JS
+          </p>
+        </div>
+        <div class="section-portfolio__item">
+          <a href="https://dreamvibe1993.github.io/silentplace">
+            <img
+              src="./img/gif/silent-place.gif"
+              alt="silent place app gif"
+              class="section-portfolio__item__gif"
+            />
+          </a>
+          <p class="section-portfolio__item__description">Silent place</p>
+        </div>
+        <div class="section-portfolio__item">
+          <a href="https://dreamvibe1993.github.io/drum-machine-deploy/">
+            <img
+              src="./img/gif/akai.gif"
+              alt="akai app gif"
+              class="section-portfolio__item__gif"
+            />
+          </a>
+          <p class="section-portfolio__item__description">Akai MPC</p>
+        </div>
+        <div class="section-portfolio__item">
+          <a href="https://dreamvibe1993.github.io/music-generator/">
+            <img
+              src="./img/gif/music-gener.gif"
+              alt="music generator app gif"
+              class="section-portfolio__item__gif"
+            />
+          </a>
+          <p class="section-portfolio__item__description">Pop hits generator</p>
+        </div>
+      </section>
+      <div class="heading-primary" id="contacts">
+        <h1>Contact me</h1>
       </div>
-      <div class="heading-primary">
-        <h1>Contacts</h1>
-      </div>
+      <section class="section-contacts">
+        <ul class="section-contacts__list">
+          <li class="section-contacts__item">
+            <a
+              href="https://t.me/GEORGIY_APRAKSIN"
+              class="section-contacts__link"
+              >Telegram</a
+            >
+          </li>
+          <li class="section-contacts__item">
+            <a
+              href="https://ekaterinburg.hh.ru/resume/416ea42dff089785ce0039ed1f345831765647"
+              class="section-contacts__link"
+              >Headhunter</a
+            >
+          </li>
+          <li class="section-contacts__item">
+            <a
+              href="https://github.com/dreamvibe1993"
+              class="section-contacts__link"
+              >Github</a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
     <script src="js/script.js"></script>
   </body>

@@ -3,8 +3,20 @@
   text-align: center;
   width: 14rem;
   margin: 2rem;
+  -webkit-perspective: 30rem;
+  perspective: 50rem;
   &__logo {
     height: 12rem;
     width: 100%;
+    transition: all 0.8s;
+    &:hover {
+      transform: rotateY(-20deg);
+    }
+  }
+  &__description {
+    transition: all 0.8s;
+  }
+  &__logo:hover + &__description {
+    transform: rotateY(20deg);
   }
 }
