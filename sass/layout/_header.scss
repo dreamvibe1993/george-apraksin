@@ -1,0 +1,51 @@
+.header {
+  padding-top: 6rem;
+  &__scenery {
+    position: relative;
+    height: 70vh;
+    width: 80%;
+    margin: 0 auto;
+    transition: all 0.4s;
+    @include break(phone) {
+      height: 50vh;
+    }
+    &__trees {
+      position: absolute;
+      display: block;
+      overflow: hidden;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0 auto;
+      z-index: 2;
+    }
+    &__sun {
+      width: 10%;
+      left: 50%;
+      top: 0%;
+      position: absolute;
+      animation: moveInTop 0.6s ease-out;
+      z-index: 1;
+    }
+    &__ujif {
+      width: 80%;
+      position: absolute;
+      display: block;
+      overflow: hidden;
+      left: 50%;
+      top: 53%;
+      transform: translate(-50%, -50%);
+      margin: 0 auto;
+      z-index: 2;
+      animation: apparition 0.6s ease-out;
+      animation-fill-mode: backwards;
+      animation-delay: 0.6s;
+    }
+    &__ujif:hover {
+      transform: translate(-50.3%, -50.3%);
+    }
+    &__ujif:hover + &__trees {
+      transform: translate(-50.3%, -50.3%);
+    }
+  }
+}

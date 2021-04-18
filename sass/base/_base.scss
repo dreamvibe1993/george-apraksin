@@ -8,8 +8,28 @@
 
 html {
   font-size: 62.5%;
+  @include break(tab-land) {
+    font-size: 56.25%;
+  }
+  @include break(tab-port) {
+    font-size: 50%;
+  }
+  @include break(phone) {
+    font-size: 40%;
+  }
+  @include break(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 body {
   box-sizing: border-box;
+  background-color: $color-primary-dark;
+}
+
+main {
+  padding: 0 2rem;
+  @include break(phone) {
+    padding: 0;
+  }
 }

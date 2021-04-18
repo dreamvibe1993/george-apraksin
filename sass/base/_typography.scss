@@ -1,3 +1,41 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: $font-size-default;
+  line-height: 1.7;
+}
+
+.heading-primary {
+  margin: 0 auto;
+  width: 40%;
+  background-color: $color-secondary-1;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  margin: 3rem auto;
+  text-align: center;
+  transform: skew(-15deg);
+  & > h1 {
+    transform: skew(15deg);
+    color: $color-white;
+    font-size: 3.4rem;
+  }
+  @include break(phone) {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+
+.section-about {
+  &__description {
+    padding: 0 2rem;
+    @include break(phone) {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.section-portfolio__item__description {
+  @include break(phone) {
+    font-size: 2.4rem;
+  }
 }

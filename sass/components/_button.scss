@@ -1,0 +1,24 @@
+.btn {
+  font-size: $font-size-default;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.4s;
+  &:link,
+  &:visited {
+    transform: skewX(-15deg);
+  }
+  &--primary {
+    color: $color-white;
+    padding: 1rem 1.5rem;
+    background-color: rgba($color-secondary-1, 0.9);
+    text-transform: uppercase;
+    font-weight: 700;
+    & > * {
+      display: inline-block;
+      transform: skewX(15deg);
+    }
+    &:hover {
+      background-color: $color-secondary-1;
+    }
+  }
+}
