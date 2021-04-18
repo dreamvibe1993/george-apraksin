@@ -4,11 +4,19 @@
   position: relative;
   width: 25rem;
   height: 30rem;
+  @include break(phone) {
+    width: 35rem;
+    height: 40rem;
+    margin-bottom: 1rem;
+  }
   &__picture {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 20rem;
+    @include break(phone) {
+      height: 30rem;
+    }
     &--1 {
       background-image: url("../img/jpg/me-bw-sq.jpg");
     }
@@ -35,6 +43,9 @@
     cursor: pointer;
     &--back {
       transform: rotateY(180deg);
+      @include break(phone) {
+        font-size: 2.4rem;
+      }
     }
   }
   &:hover &__side--front {

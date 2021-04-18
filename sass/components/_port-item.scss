@@ -1,6 +1,9 @@
 .section-portfolio__item {
   width: 25.6rem;
   text-align: center;
+  @include break(phone) {
+    margin: 0 2rem;
+  }
   &__gif {
     transition: all 0.4s;
     width: 25.6rem;

@@ -2,8 +2,13 @@
   padding-top: 6rem;
   &__scenery {
     position: relative;
-    height: 95vh;
+    height: 70vh;
+    width: 80%;
+    margin: 0 auto;
     transition: all 0.4s;
+    @include break(phone) {
+      height: 50vh;
+    }
     &__trees {
       position: absolute;
       display: block;
@@ -15,7 +20,7 @@
       z-index: 2;
     }
     &__sun {
-      width: 10rem;
+      width: 10%;
       left: 50%;
       top: 0%;
       position: absolute;
@@ -23,10 +28,10 @@
       z-index: 1;
     }
     &__ujif {
+      width: 80%;
       position: absolute;
       display: block;
       overflow: hidden;
-      width: 80rem;
       left: 50%;
       top: 53%;
       transform: translate(-50%, -50%);

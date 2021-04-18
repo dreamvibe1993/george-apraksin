@@ -16,16 +16,26 @@ body {
   transform: skew(-15deg);
   & > h1 {
     transform: skew(15deg);
-    // -webkit-background-clip: text;
-    // background-clip: text;
-    color: $color-primary-dark;
+    color: $color-white;
     font-size: 3.4rem;
-    // background-image: linear-gradient(to bottom, $color-tertiary, $color-white);
+  }
+  @include break(phone) {
+    width: 80%;
+    font-size: 1rem;
   }
 }
 
 .section-about {
   &__description {
     padding: 0 2rem;
+    @include break(phone) {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.section-portfolio__item__description {
+  @include break(phone) {
+    font-size: 2.4rem;
   }
 }

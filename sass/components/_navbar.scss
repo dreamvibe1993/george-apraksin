@@ -12,7 +12,13 @@
     object-position: 0 60%;
     object-fit: cover;
     overflow: hidden;
+    @include break(phone) {
+      display: none;
+    }
   }
   &__tabs {
+    @include break(phone) {
+      margin: 0 auto;
+    }
   }
 }
