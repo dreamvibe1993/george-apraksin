@@ -2,11 +2,11 @@
   font-size: $font-size-default;
   text-decoration: none;
   display: inline-block;
+  transition: all 0.4s;
   &:link,
   &:visited {
     transform: skewX(-15deg);
   }
-  transition: all 0.4s;
   &--primary {
     color: $color-white;
     padding: 1rem 1.5rem;

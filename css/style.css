@@ -197,10 +197,6 @@ body {
       transform: scale(1.05);
       box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.1); }
 
-.row {
-  display: flex;
-  justify-content: space-around; }
-
 .header {
   padding-top: 6rem; }
   .header__scenery {

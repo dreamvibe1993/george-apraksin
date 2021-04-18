@@ -1,0 +1,1 @@
+/** Sorry but javascript's been banned by RosComNadzor */
